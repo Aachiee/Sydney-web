@@ -1,0 +1,327 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+/* header */
+header {
+    border: 1px solid #fff;
+    background: url(images/Banner1.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.circlePic {
+    position: absolute;
+    width: 10%;
+    filter: drop-shadow(0 0 5px rgb(149, 149, 149));
+}
+
+.koala {
+    top: 10%;
+    right: 15%;
+}
+
+.kangaroo {
+    top: 25%;
+    right: 5%;
+}
+
+h1 {
+    /* border: 1px solid #000; */
+    width: 30%;
+    font-size: 9em;
+    margin: 16% 12% 5%;
+    text-indent: -99999px;
+    background: url(images/title.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(0 0 10px #000);
+}
+
+h2 {
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+    font-size: 4em;
+}
+
+.waveTexture {
+    vertical-align: bottom;
+}
+
+span,
+p {
+    font-size: 16px;
+}
+
+
+/* news */
+.news {
+    /* border: 1px solid #000; */
+    width: 100%;
+    padding: 2%;
+}
+
+.news h2 {
+    width: 22%;
+    background: url(images/subtitle1.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-indent: -99999px;
+}
+
+.info {
+
+    display: flex;
+    justify-content: center;
+}
+
+.plan {
+    width: 40%;
+    padding: 2%;
+    margin: 2%;
+    background: #E2EBF0;
+    border-radius: 5px;
+}
+
+.info img {
+    width: 40%;
+    border-radius: 5px;
+
+}
+
+.text {
+    width: 55%;
+    float: right;
+    margin: 0 auto;
+}
+
+.text span {
+    color: #fff;
+    background: #6A8099;
+    padding: 2% 5%;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.text p {
+    font-weight: bold;
+}
+
+.text a {
+    text-indent: -99999px;
+    background: url(images/more.png) no-repeat;
+    background-size: contain;
+    width: 40%;
+    float: right;
+}
+
+.text a:hover {
+    width: 41%;
+}
+
+/* about */
+.about {
+    background: url(images/Banner2.png) no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.about h2 {
+    width: 25%;
+    background: url(images/subtitle2.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-indent: -99999px;
+}
+
+.content {
+    width: 35%;
+    margin: 3% auto 8%;
+    padding: 3% 4%;
+    letter-spacing: 0.05em;
+    box-shadow: 0 0 10px #cacaca;
+    border-radius: 10px;
+}
+
+.content span {
+    /* border: 1px solid #000; */
+    color: #258E88;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.content p {
+    color: #666666;
+    font-size: 0.85em;
+    margin: 2% 0 5%;
+}
+
+/* spots */
+.spots {
+    background: #BFD9DB;
+}
+
+.picture {
+    padding: 2% 10% 0;
+}
+
+
+.picture img {
+    width: 24%;
+    filter: drop-shadow(0 0 8px rgb(154, 181, 184));
+}
+
+.picture img:nth-child(1) {
+    transform: rotate(5deg);
+}
+
+.picture img:nth-child(n+2) {
+    transform: rotate(-15deg);
+}
+
+.picture img:nth-child(3) {
+    transform: rotate(0deg);
+}
+
+/* footer */
+.footer {
+    /* border: 1px solid #000; */
+    background: url(images/Banner3.png) no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding-bottom: 10%;
+}
+
+.footer h2 {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.footer p {
+    width: 61%;
+    margin: 0 auto;
+    color: #666666;
+    font-size: 0.85em;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.footer h3 {
+    width: 50%;
+    text-align: center;
+    margin: 2% auto;
+}
+
+.footer span {
+    background: #FCEE21;
+}
+
+@media screen and (max-width:480px) {
+
+    span,
+    p {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    h1 {
+        /* border: 1px solid #000; */
+        font-size: 4.5em;
+        width: 50%;
+        margin-left: 5%;
+    }
+
+    h2 {
+        /* border: 1px solid #000; */
+        font-size: 2em;
+    }
+
+    /* news */
+
+    .info {
+        display: block;
+    }
+
+    .info img {
+        width: 35%;
+    }
+
+    .plan {
+        width: 80%;
+        margin: 2% auto;
+        padding: 3%;
+    }
+
+    .text {
+        width: 60%;
+    }
+
+    .text span {
+        padding: 1% 3%;
+        margin-bottom: 2%;
+    }
+
+    /* about */
+    .about {
+        background: url(images/Banner2-2.png) no-repeat;
+        background-size: 110%;
+        background-position: bottom;
+    }
+
+    .content {
+        width: 80%;
+        letter-spacing: 0;
+    }
+
+    .content span {
+        font-size: 0.8em;
+    }
+
+    .content p {
+        font-size: 0.5em;
+    }
+
+    /* spots */
+    .picture {
+        /* border: 1px solid #000; */
+        width: 100%;
+        padding: 2% 15% 0;
+    }
+
+    .picture img {
+        width: 49%;
+    }
+
+
+    /* footer */
+    .footer h2 {
+        font-size: 1.2em;
+    }
+
+    .footer p {
+        width: 75%;
+    }
+
+    .footer h3 {
+        /* border: 1px solid #000; */
+        width: 80%;
+    }
+
+    .footer span {
+        /* border: 1px solid #000; */
+        width: 80%;
+        margin: 0 auto;
+    }
+}
