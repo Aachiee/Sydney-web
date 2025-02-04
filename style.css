@@ -4,7 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    background: gray;
+}
+
 .wrap {
+    background: #fff;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
@@ -108,8 +113,9 @@ p {
     color: #fff;
     background: #6A8099;
     padding: 2% 5%;
-    display: inline-block;
+    display: block;
     border-radius: 5px;
+    width: 160px;
 }
 
 .text p {
